@@ -8,6 +8,7 @@ class SecSpider(scrapy.Spider):
 
     def parse(self, response):
         rows = response.xpath('//tr[contains(@class, "pause-list-page-row")]')
+        print('Total rows:', len(rows))
         for row in rows:
             partial_url = row.xpath('./td[1]//a/@href').get().strip()
             complete_url = response.urljoin(partial_url)
