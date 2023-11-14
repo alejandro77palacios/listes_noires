@@ -1,0 +1,4 @@
+selenium
+scrapy
+pandas
+babel
