@@ -6,7 +6,7 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
+ITEM_PIPELINES = {'noires.pipelines.MultiExporterPipeline': 1}
 BOT_NAME = "noires"
 
 SPIDER_MODULES = ["noires.spiders"]
